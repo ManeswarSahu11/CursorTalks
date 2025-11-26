@@ -1,0 +1,12 @@
+SpeechRecognition
+# brew install portaudio
+PyAudio
+langgraph
+langchain
+pymongo
+langgraph-checkpoint-mongodb
+langchain-openai
+openai
+dotenv
+openai[voice_helpers]
+langchain_community

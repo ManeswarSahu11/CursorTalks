@@ -1,0 +1,10 @@
+# Q) What does the assert do? 
+# A) Checks that the number of tool calls in the LLM's response is at most one. LLM tries to call more than one tool in a single response, 
+# the program will raise an AssertionError and stop execution at that point. This is a safety check to ensure your workflow only handles one tool call per turn.
+
+# Q) Does this mean you can only use one tool?
+# A) No. You can define and register multiple tools in your tools list. The assert is not about how many tools you have, but about how many tool calls the LLM makes in a single response.
+
+# Q) How does the LLM pick which tool to call?
+# A) The LLM receives the list of available tools (from your tools list). Based on the user's message, it decides which tool (if any) is most appropriate to call.
+# It will include a tool call in its response if it thinks a tool should be used. The assert ensures that, even if you have many tools, only one tool call is processed per message.
