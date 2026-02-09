@@ -48,7 +48,7 @@ A browser-free, voice-controlled AI assistant that listens to your programming r
 
 1. Clone the repo
 ```
-git clone https://github.com/yourusername/cursorTalks
+git clone https://github.com/ManeswarSahu11/cursorTalks
 cd cursorTalks
 ```
 2. Install dependencies
